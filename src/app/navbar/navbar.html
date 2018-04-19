@@ -1,0 +1,71 @@
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark black">
+
+    <!-- Navbar brand -->
+    <logo>
+        <a class="navbar-brand" href="#">
+            <img src="assets/zeze.jpeg" style="width: 150px; height: 150px;" />
+        </a>
+    </logo>
+
+    <!-- Collapsible content -->
+    <links>
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-light"
+                [routerLink]="['home']"
+                mdbRippleRadius>
+                  <h4>Home</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                [routerLink]="['/safari']">
+                    <h4>Safari</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                [routerLink]="['/about']">
+                    <h4>About Us</h4>
+                </a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                [routerLink]="['/artists']">
+                    <h4>Our Artists</h4>
+                </a>
+            </li>
+
+          <!--  <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                [routerLink]="['/locations']">Our Locations</a>
+            </li> -->
+
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                [routerLink]="['/contact']">
+                    <h4>Contact Us</h4>
+                </a>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <!-- Search form -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                [routerLink]="['/signup']">
+                    <h4>Sign In/Sign Up</h4>
+                </a>
+            </li>
+        </ul>
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->

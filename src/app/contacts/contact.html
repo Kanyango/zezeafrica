@@ -1,0 +1,113 @@
+<div class="container-fluid" id="contacty">
+  <div class="row">
+    <div class="col-md-4">
+        <h1 style="padding: 40px;
+                  font-size: 120px;
+                  background-color: #FFA000;
+        ">Get in <br> Touch.</h1>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <h2>Our Locations</h2>
+  <hr>
+  <div class="row">
+
+      <div class="col-md-6">
+
+          <div class="media mb-1">
+             <a class="media-left waves-light">
+                 <img class="img-thumbnail" src="assets/kenya.jpg"
+                 style="width: 280px; height: 200px;"
+                 alt="Generic placeholder image">
+             </a>
+             <div class="media-body">
+                 <h4 class="media-heading">Kenya</h4>
+                 <p>Location: Avenue Park, Embakassi</p>
+                 <p>Email   : kenya@zezeafrica.com</p>
+                 <p>Phone   : +254071234567890</p>
+             </div>
+         </div>
+         <br>
+         <div class="media mb-1">
+            <a class="media-left waves-light">
+                <img class="img-thumbnail"
+                src="assets/rwanda.jpg" style="width: 280px; height: 200px;"
+                alt="Generic placeholder image">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Rwanda</h4>
+                <p>Location: Avenue Park, Embakassi</p>
+                <p>Email   : kenya@zezeafrica.com</p>
+                <p>Phone   : +254071234567890</p>
+            </div>
+        </div>
+
+          <div class="media mb-1">
+             <a class="media-left waves-light">
+                 <img class="img-thumbnail" style="width: 280px; height: 200px;"
+                  src="assets/tanzania.jpg" alt="Generic placeholder image">
+             </a>
+             <div class="media-body">
+                 <h4 class="media-heading">Tanzania</h4>
+                 <p>Location: Avenue Park, Embakassi</p>
+                 <p>Email   : kenya@zezeafrica.com</p>
+                 <p>Phone   : +254071234567890</p>
+             </div>
+         </div>
+
+         <div class="media mb-1">
+            <a class="media-left waves-light">
+                <img class="img-thumbnail"
+                src="assets/uganda.jpg" style="width: 280px; height: 200px;"
+                alt="Generic placeholder image">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Uganda</h4>
+                <p>Location: Avenue Park, Embakassi</p>
+                <p>Email   : kenya@zezeafrica.com</p>
+                <p>Phone   : +254071234567890</p>
+            </div>
+        </div>
+
+
+      </div>
+      <div class="col-md-6 ">
+      <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Talk to us</h3>
+        <hr>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+          <div class="md-form form-group">
+            <i class="fa fa-user prefix"></i>
+            <input mdbActive type="text" class="form-control" id="form9" name="name" mdbInputValidate>
+            <label for="form9">Type your name</label>
+        </div>
+        <div class="md-form form-group">
+            <i class="fa fa-envelope prefix"></i>
+            <input mdbActive type="email" class="form-control" id="form9" name="email" mdbInputValidate>
+            <label for="form9">Type your e-mail</label>
+        </div>
+        <div class="md-form">
+            <i class="fa fa-pencil prefix"></i>
+            <textarea mdbActive type="text" id="form8" class="md-textarea"></textarea>
+            <label for="form8">Your message</label>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-warning btn-lg waves-light" mdbRippleRadius>Send
+              <i class="fa fa-paper-plane-o ml-1"></i>
+            </button>
+        </div>
+      </form>
+    </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+  <br>
+
+
+<br>
+<footer-component></footer-component>
