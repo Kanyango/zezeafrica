@@ -22,5 +22,9 @@ export class ContactComponent {
             message: ['', Validators.required]
         })
     }
-
+    
+    onSubmit()
+    {
+    
+    }
 }
