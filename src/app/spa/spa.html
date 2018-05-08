@@ -1,0 +1,127 @@
+<!--
+
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#fat">@fat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#mdo">@mdo</a>
+    </li>
+      <li class="nav-item">
+          <a class="dropdown-item" href="#three">three</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#one">one</a>
+        <a class="dropdown-item" href="#two">two</a>
+        <a class="dropdown-item" href="#three">three</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <h4 id="fat" style="height: 1000px;">@fat</h4>
+  <p>...</p>
+  <h4 id="mdo" style="height: 1000px;">@mdo</h4>
+  <p>...</p>
+  <h4 id="one" style="height: 1000px;">one</h4>
+  <p>...</p>
+  <h4 id="two" style="height: 1000px;">two</h4>
+  <p>...</p>
+  <h4 id="three" style="height: 1000px;">three</h4>
+  <p>...</p>
+</div> -->
+
+
+
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark black fixed-top">
+
+
+    <logo>
+        <a class="navbar-brand" href="#">
+            <img src="assets/zeze.jpeg" style="width: 100px; height: 80px;" />
+        </a>
+    </logo>
+
+
+    <links>
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-light" pageScroll  href="#home" >
+                  <h4>Home</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                    pageScroll [pageScrollOffset]="120" href="#safari">
+                    <h4>Safari</h4>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                   pageScroll [pageScrollOffset]="120" href="#about" >
+                    <h4>About Us</h4>
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                pageScroll [pageScrollOffset]="120" href="#partners">
+                    <h4>Our Partners</h4>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                pageScroll [pageScrollOffset]="120"  href="#artists">
+                    <h4>Our Artists</h4>
+                </a>
+            </li>
+
+
+
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                pageScroll [pageScrollOffset]="120" href="#contact">
+                    <h4>Contact Us</h4>
+                </a>
+            </li>
+            
+            
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbRippleRadius
+                 pageScroll href="#signup">
+                    <h4>Sign In/Sign Up</h4>
+                </a>
+            </li>
+        </ul>
+    </links>
+
+
+</mdb-navbar>
+
+
+<home-component id="home"></home-component>
+
+
+<safari-component id="safari"></safari-component>
+
+<about-component id="about"></about-component>
+
+<partners-component id="partners"></partners-component>
+
+<artists-component id="artists"></artists-component>
+
+
+
+<contact-component id="contact"></contact-component>
+

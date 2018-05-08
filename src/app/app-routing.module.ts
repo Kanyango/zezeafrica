@@ -8,6 +8,8 @@ import { SignUpComponent } from './signup/signup';
 import { SafariComponent } from './safari/safari';
 import { ArtistsComponent } from './artists/artists';
 import { CoverageComponent } from './coverage/coverage';
+import { SpaComponent } from './spa/spa'
+import { PartnersComponent } from './partners/partners';
 
 const routes: Routes = [
         { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,20 +19,10 @@ const routes: Routes = [
         { path: 'signup', component: SignUpComponent},
         { path: 'safari', component: SafariComponent},
         { path: 'artists', component: ArtistsComponent},
-        { path: 'locations', component: CoverageComponent}
-        // { path: 'about', component: AboutComponent},
-        // { path: 'services', component: ServicesComponent},
-        // { path: 'cars', component: CarsComponent},
-        // { path: 'contact', component: ContactComponent},
-        // { path: 'car_detail/:id', component: CarDetailsComponent},
-        // { path: 'thankyou', component: ConfirmationComponent},
-        // { path: 'rent_car', component: RentYourCarComponent},
-        // { path: 'payments/:id', component: PaymentsComponent},
-        // { path: 'mpesa/:id', component: MpesaComponent},
-        // { path: 'paypal/:id', component: PaypalComponent},
-        // { path: 'confirmation', component: PaypalBtnComponent},
-        // { path: 'signup', component: SignUpComponent },
-        // { path: 'plan', component: PlanComponent }
+        { path: 'locations', component: CoverageComponent},
+        { path: 'spa', component: PartnersComponent},
+        { path: 'partners', component: CoverageComponent}
+
 ];
 
 @NgModule({

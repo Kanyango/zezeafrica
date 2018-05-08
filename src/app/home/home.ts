@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit
      slide: 1,
      speed: 40,
      interval: 4000,
-     load: 2,
+     load: 1,
      touch: true,
      loop: true,
      custom: 'banner'

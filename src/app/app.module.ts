@@ -9,6 +9,8 @@ import {
     FormGroup,
     FormControl
 } from '@angular/forms';
+import { ScrollSpyModule } from 'ngx-scrollspy';
+import { SwiperModule } from 'angular2-useful-swiper';
 import { AppRoutingModule }   from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms'
 import { NavbarComponent } from './navbar/navbar';
@@ -21,6 +23,12 @@ import { SignUpComponent } from './signup/signup';
 import { SafariComponent } from './safari/safari';
 import { ArtistsComponent } from './artists/artists';
 import { CoverageComponent } from './coverage/coverage';
+import { SpaComponent } from './spa/spa';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ModalsComponent } from './about/modal';
+import { PartnersComponent } from './partners/partners';
+
 
 @NgModule({
   declarations: [
@@ -33,17 +41,23 @@ import { CoverageComponent } from './coverage/coverage';
     SignUpComponent,
     SafariComponent,
     ArtistsComponent,
-    CoverageComponent
-
+    CoverageComponent,
+    SpaComponent,
+    ModalsComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
+    //ScrollSpyModule.forRoot(),
+    NgbModule.forRoot(),
+    SwiperModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxCarouselModule
+    NgxCarouselModule,
+    Ng2PageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent],

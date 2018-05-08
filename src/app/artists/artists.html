@@ -1,17 +1,17 @@
-<div class="containet" id="artists">
+<!--background-color: #BA68C8;-->
+<div style="padding-top: 100px; padding-bottom: 100px;" id="artist_page">
+<div class="container">
   <div class="row">
-    <div class="col-md-4">
-        <h1 style="padding: 22%;
-                  font-size: 650%;
-                  background-color: #FFA000;
-        ">Our artists.</h1>
-    </div>
+    <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <h1 style="font-size: 80px; letter-spacing: .1em; color: #fff;">Our Artists.</h1>
+            <hr>
+        </div>
+      <hr>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
+
+<!--
 <div class="container">
   <div class="row">
     <div class="col-md-3"></div>
@@ -21,27 +21,116 @@
     </div>
   </div>
 </div>
-<br>
+-->
 <br>
 <br>
 <div class="container">
   <div class="row">
-    <div class="col-md-4">
-      <div class="card" id="artist">
+      <ngx-carousel
+        [inputs]="carouselTile"
+        (carouselLoad)="myfunc($event)">
+          
+          <ngx-tile NgxCarouselItem *ngFor="let art of artist_list">
+              <div class="tile">
+                  <div class="card">
+                      <img class="img-fluid"  src="{{ art.photo }}" id="image" />
+                      <div class="card-body text-center">
+                        
+                          <a href="#"><h4>{{ art.name }}</h4></a>
+                          <p style="font-size: 22px;">{{ art.music }}</p>
+                          <hr>
+                          <span><i class="fa fa-youtube" style="font-size: 28px; color: #424949;" aria-hidden="true"></i></span>
+                          &nbsp;
+                          &nbsp;
+                          &nbsp;
+                          <span><i class="fa fa-facebook-f" style="font-size: 28px; color: #424949;" aria-hidden="true"></i></span>
+                          &nbsp;
+                          &nbsp;
+                          &nbsp;
+                          <span><i class="fa fa-instagram" style="font-size: 28px; color: #424949;" aria-hidden="true"></i></span>
+                         
+                        
+                      </div>
+                    
+                  </div>
+                
+              </div>
+          </ngx-tile>
+          
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+    </ngx-carousel>
+    <!--<swiper [config]="config">
+        <div class="swiper-wrapper">
+            
+ 
+          <div class=" card swiper-slide" id="artist">
+              <
+              <div>
+              
+                 <img class="img-fluid" src="assets/darasa.jpg" id="image" />
+            <div class="overlay">
+               <div style="padding-left: 80px; letter-spacing: 2px; padding-top: 50px; color: #fff;">
+                   <p style="font-size: 28px;">Artist Name</p>
+                   <div>
+                     <a>Youtube link</a>
+                  
+                 </div>
+              </div>
+          </div>
+              </div>
+        </div>
+            
+        <div class="card swiper-slide" id="artist">
+            <img class="img-fluid" src="assets/darasa.jpg" id="image" />
+            <div class="overlay">
+               <div style="padding-left: 80px; letter-spacing: 2px; padding-top: 50px; color: #fff;">
+                   <p style="font-size: 28px;">Artist Name</p>
+                   <div>
+                     <a>Youtube link</a>
+                   
+                 </div>
+              </div>
+          </div>
+        </div>
+    
+      <div class=" card swiper-slide" id="artist">
         <img class="img-fluid" src="assets/darasa.jpg" id="image" />
         <div class="overlay">
            <div style="padding-left: 80px; letter-spacing: 2px; padding-top: 50px; color: #fff;">
                <p style="font-size: 28px;">Artist Name</p>
                <div>
                  <a>Youtube link</a>
-               <!-- <a [routerLink]="['../car_detail', car._id]"><p style="text-decoration: underline; font-size: 20px;">CONTINUE</p></a> -->
+              
              </div>
-          </div>
+          
       </div>
     </div>
-  </div>
+            </div>
+        
+        
+      <div class=" card swiper-slide" id="artist">
+        <img class="img-fluid" src="assets/darasa.jpg" id="image" />
+        <div class="overlay">
+           <div style="padding-left: 80px; letter-spacing: 2px; padding-top: 50px; color: #fff;">
+               <p style="font-size: 28px;">Artist Name</p>
+               <div>
+                 <a>Youtube link</a>
+               
+             </div>
+          </div>
+      
+    </div>
+            </div>
+        
+        </div>
+        <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+      </swiper> -->
+  
 </div>
 </div>
-<br>
-<br>
-<footer-component></footer-component>
+</div>
+<!--<footer-component></footer-component>-->

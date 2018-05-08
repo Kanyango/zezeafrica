@@ -1,11 +1,15 @@
-import { Component , OnInit} from '@angular/core';
+import { Component ,OnInit } from '@angular/core';
 import { NgxCarousel } from 'ngx-carousel';
 
 @Component({
-    selector: 'artists-component',
-    templateUrl: 'artists.html',
+    selector: 'partners-component',
+    templateUrl: 'partners.html',
      styles: [`
-       
+       .tile {
+            min-height: 200px;
+            background-color: #fff;
+            background-size: cover !important;
+        }
         .leftRs {
         position: absolute;
         margin: auto;
@@ -28,33 +32,22 @@ import { NgxCarousel } from 'ngx-carousel';
         border-radius: 999px;
         right: 0;
         }
-        #art_card
-        {
-            width: 380px;
-        }
+        
         
      `]
+    
 })
 
-export class ArtistsComponent implements OnInit 
+export class PartnersComponent implements OnInit
 {
-   public artistsCarousel: NgxCarousel;
-   public carouselTile: NgxCarousel;
-   
-   artist_list = 
-                    [
-                        {name: 'Darassa' , photo: 'assets/darassa.png', music: 'Afro pop' },
-                       // {name: 'Solomon Mkubwa' , photo: 'assets/solomon.jpg', music: 'Gospel' },
-                        {name: 'Aslay' , photo: 'assets/aslay.jpg', music: 'Afro pop' },
-                        {name: 'Aslay' , photo: 'assets/aslay.jpg', music: 'Afro pop' },
-                        {name: 'Aslay' , photo: 'assets/aslay.jpg', music: 'Afro pop' },
-                        {name: 'Aslay' , photo: 'assets/aslay.jpg', music: 'Afro pop' }
-                    
-                    ];
-   
-   ngOnInit() {
-  
-   this.carouselTile = {
+    public partnersTile: NgxCarousel;
+    
+    partners= ['assets/amazon.jpg','assets/deezerlogo.jpg', 'assets/shazam.jpg', 'assets/youtube.jpg',
+                'assets/shazam.jpg', 'assets/youtube.jpg'];
+    
+    ngOnInit()
+    {
+        this.partnersTile = {
       grid: { xs: 2, sm: 3, md: 3, lg: 4, all: 0 },
       speed: 600,
       interval: 3000,
@@ -88,9 +81,9 @@ export class ArtistsComponent implements OnInit
       load: 2,
       touch: true
     };
- }
-
- public myfunc(event: Event) {
+    }
+    
+     public ourfunc(event: Event) {
      // carouselLoad will trigger this funnction when your load value reaches
      // it is helps to load the data by parts to increase the performance of the app
      // must use feature to all carousel
