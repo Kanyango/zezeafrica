@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "ng build --aot --prod",
+    "postinstall": "ng build --aot -prod",
     "start": "node app.js"
   },
   "engines": {
@@ -12,12 +12,11 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^1.6.0",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular-devkit/core": "^0.5.7",
-    "@angular/animations": "^5.0.0",
-    "@angular/cli": "^1.6.1",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
-    "@angular/compiler-cli": "^5.0.0",
     "@angular/core": "^5.0.0",
     "@angular/forms": "^5.0.0",
     "@angular/http": "^5.0.0",
@@ -41,7 +40,7 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.1",
+    "@angular/cli": "^1.6.1",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
     "@types/jasmine": "~2.5.53",
