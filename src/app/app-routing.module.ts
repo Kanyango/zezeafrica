@@ -10,7 +10,7 @@ import { ArtistsComponent } from './artists/artists';
 import { CoverageComponent } from './coverage/coverage';
 import { SpaComponent } from './spa/spa'
 import { PartnersComponent } from './partners/partners';
-import { LoginComponent } from './signup/signup';
+import { SignUpComponent } from './signup/signup';
 
 const routes: Routes = [
         { path: '', redirectTo: 'home', pathMatch: 'full'},
