@@ -23,7 +23,7 @@ const routes: Routes = [
         { path: 'locations', component: CoverageComponent},
         { path: 'spa', component: PartnersComponent},
         { path: 'partners', component: CoverageComponent},
-        { path: 'sighup', component: SignUpComponent}
+        { path: 'signup', component: SignUpComponent}
 
 ];
 
