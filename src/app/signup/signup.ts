@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
     selector: 'signup-component',
@@ -6,5 +7,25 @@ import { Component } from '@angular/core';
 })
 
 export class SignUpComponent {
+  
+     loginForm: FormGroup;
+    
+    constructor(private fb: FormBuilder)
+    {
+        this.createForm();
+     }
+    
+    createForm()
+    {
+      this.loginForm = this.fb.group({
+        username: ['', Validators.required],
+        password : ['', Validators.required]
+      });
+    }
+    
+    onSubmit()
+    {
+      
+    } 
 
 }
