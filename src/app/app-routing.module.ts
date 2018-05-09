@@ -10,7 +10,7 @@ import { ArtistsComponent } from './artists/artists';
 import { CoverageComponent } from './coverage/coverage';
 import { SpaComponent } from './spa/spa'
 import { PartnersComponent } from './partners/partners';
-import { LoginComponent } from './login/login';
+import { LoginComponent } from './signup/signup';
 
 const routes: Routes = [
         { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -23,7 +23,7 @@ const routes: Routes = [
         { path: 'locations', component: CoverageComponent},
         { path: 'spa', component: PartnersComponent},
         { path: 'partners', component: CoverageComponent},
-        { path: 'login', component: LoginComponent}
+        { path: 'sighup', component: SignUpComponent}
 
 ];
 
