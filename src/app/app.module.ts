@@ -45,6 +45,7 @@ import { PartnersComponent } from './partners/partners';
     SpaComponent,
     ModalsComponent,
     PartnersComponent
+
   ],
   imports: [
     BrowserModule,
